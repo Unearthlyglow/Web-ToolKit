@@ -1,0 +1,80 @@
+Make sure there is a note about TS files, nothing special.
+
+Tools Needed:
+
+Chapter 10:
+1. Test Runner: Runs your tests(i.e, the testing code). Automatically detects testing code. Displays results. JEST, KARMA.
+2. Assertion Library: Used to define expected outcomes. Checks whether expectations are met. Supports all kinds of expectations and modes(synch/async). JEST, or CHAI.
+
+
+Chapter 11:
+Vitest: The code with Vitest is the same as Jest so I can still apply what we learn with this program to Jest. Also, Vitest is being recommended at this time(5/31/2022) because it has better support of JS modules. At this time Jest is still in the experimental stage for JS modules. 
+
+Chapter 12: 
+
+Installing Vittest: npm install --save-dev vittest
+
+Chapter 15: 
+Unit Testing: Units are usually FUNCTIONS, sometimes classes. 
+
+Chapter 17: 
+How to run a test: npm test 
+How to run test and have the tests being watched: 
+In package.json file: "test:watch": "vitest".
+
+Chapter 19: Arrange, Act, Assert.
+
+Chapter 20: Keep your tests simple. 
+
+Chapter 30: Test Suits
+using describe('test suite name' () => {
+  YOUR TESTS
+})
+Describe is a way to group your tests that pertain to a sorting parameter. i.e placing all the tests that are related to FUNCTIONX.
+
+Chapter 34: Your tests should only test your code! 
+Don't test third-party code/APIs(you can't influence them anyways). Only test WHAT YOU CAN CHANGE. 
+Write separate tests for your backend code.  Do test your client side reaciton to different responses and errors. 
+Chapter 35: Writing good tests.
+1. AAA: Arrange - Act - Assert 
+2. Only test ONE THING.(look at math.test.js for example)
+3. Focus on the ESSENCE of a test when arranging.(only use as much code as needed. don't fluff up, overcomplicate, overcode your test)
+4. Keep your number of assertions(expects) low. Typically try to have as little expects as possible but also understand that some tests benefit from multiple expects. With too many expects you MAY be testing more than one thing and with that you may want to consider creating a new test. 
+5. 
+
+Chapter 36: Only Test "One" Thing. 
+1. One thing = One Feature(i.e validate input or transform it.)
+
+Chapter 37: Splitting functions For Easier Testing & Better Code
+
+****: In-source Testing: 
+Update the includeSource config for Vitest to grab the files under src/:
+
+// vite.config.ts
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+  test: {
+    includeSource: ['src/**/*.{js,ts}'],
+  },
+})
+
+npx vitest
+
+TypeScript#
+To get TypeScript support for import.meta.vitest, add vitest/importMeta to your tsconfig.json:
+
+// tsconfig.json
+{
+  "compilerOptions": {
+    "types": [
++     "vitest/importMeta"
+    ]
+  }
+}
+
+Chapter 43: Integration Tests: Tests that include multiple modules or multiple functions. These test the combinations of functions. 
+
+Chapter 44: MAKE SURE I HAVE DOWN HOW TO CATCH ERRORS.
+
+Chapter 45: 
