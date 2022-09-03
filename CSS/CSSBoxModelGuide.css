@@ -1,0 +1,52 @@
+Optimizing Images: Lazy loading etc...background stuff.
+
+UI GRADIENTS
+
+BREAK
+Border - shorthand & longhand
+        h1 {
+          border: 2px solid purple;
+          border-top-color: red;
+          border-bottom-width: 5px;
+}
+
+BREAK
+Padding - shorthand & longhand
+Space between the content and the border.
+
+        img {
+          padding: 20px;
+          padding-bottom: 40px;
+          padding: 50px(top and bottom) 10px(left and right)
+          padding: 40px(T) 50px(R) 30px(B) 40px(L)
+        }
+
+BREAK
+Margin - shorthand & longhand
+Space around an element.
+
+img{
+  margin: 20px;
+}
+
+BREAK
+Box Sizing: border-box
+I want the width and height to be the entire content box plus the padding up until the border. When you're setting the width or height you're using the border box, one border to the other versus the content box which is the box within the border box. Adjusts the padding or the thickness of the border without changing the overall box. 
+
+
+BREAK
+Border Clipping 
+
+      h2 {
+        background-clip:content-box;
+        background-clip:padding-box;
+        background-clip:border-box;
+        background-clip:text;
+      }
+
+
+BREAK
+Block vs. Inline vs Inline-Block
+Inline elements don't respond to height or width changes. 
+
+Inline-Block will respond to width and height changes. They are a hybrid and will transform like a block but will not take an entire line and will be in-inline. 

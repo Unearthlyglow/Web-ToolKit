@@ -1,0 +1,192 @@
+Stay Far from timid only makes moves when you're hearts in it, see you chumps on top
+
+IMPORTANT: 
+
+        * Clean up unorganized section of info in userStories.js file. 
+        
+        * 
+
+Add and clean up with Concepts page:
+**Methods Guide needs a cleaning: Clear examples and better descriptions. 
+
+1. let, const, var differences, why don't we use var anymore? List reasons.
+
+2. Switch Statement use cases.
+
+3. Function expression Example. 
+
+4. Use Cases for Loops
+
+5. Go through the Chapters of section 8.
+
+8. Short Circuiting use cases.
+
+9. Optional Chaining use cases.
+
+10. Sets use cases.
+
+11. Maps use cases. 
+
+12. The bind Method.
+
+13. 
+
+        * Websites: 
+
+         1. Parallax
+
+         2. WebApps: Clock, Calculator, 
+
+NOTES FROM APP PROJECT, REFACTOR
+1. Need to go over a couple of starting from scratch Git Exercises.
+
+2. Can I nest a pseudo selector within another it's parent selector?
+
+3. Go over JS file and break it down with notes, line by line(as needed)
+
+Remainder (%)modulo: 
+The remainder operator (%) returns the remainder left over when one operand is divided by a second operand. It always takes the sign of the dividend.
+
+console.log(13 % 5);
+// expected output: 3
+
+5 goes into 13 TWICE which = 10, 3 is LEFT OVER. 
+
+15 % 2
+
+You cannot have 3 % 0, this = NaN. You can have 0 % 3 which = 0.
+
+FROM PROJECT STOPWATCH
+
+UNORGANIZED: Look into (or place into correct category):
+1. https://web.dev/webtransport/  | Alternative to Web Sockets
+2. https://blankslatedigital.co.uk/blog/web-dev/open-graph-meta-tags/ | Open Graph
+3. https://www.moesif.com/blog/technical/graphql/REST-vs-GraphQL-APIs-the-good-the-bad-the-ugly/
+4. 
+
+IMPORTANT        
+BREAK
+Tool Kits -
+        * Reduce footprint and have general folders Scripting/JsGuides/JSTesting/etc...
+        
+        *. Include MD Agenda(Progress timelineGit setup, refactoring, deploying, containerizing).
+       
+BREAK
+CSS/SCSS -
+        *. Parallax
+
+        *. Sticky Footer
+
+        *. 8/5/22: Need to organize CSS folder 
+
+        *. CSS Animations /CSS JS Animation Library.
+
+        *. 7/29/22: Flexbox Guide - SASS Udemy OR Cole Steele. https://www.youtube.com/watch?v=qZv-rNx0jEA
+
+        *. 7/29/22: Need some grid templates/Flexbox templates/ etc….  
+
+BREAK
+JS -
+        *. I stopped at "Chapter 9, JS Udemy" on 7/24/22 6:38pm
+
+        *. 7/29/22: Don't think I need any info in the CLASSES side....need to make sure I have info on classes and such. 
+
+        *. 7/29/22: Go over UDEMY JS for all the methods used there, need to add map. etc…
+
+        *. 7/29/22: Need to organize the JS folder..its a mess.
+        
+        *. 7/29/22: Async Guide
+
+        *. 8/3/22 JS Validating Forms
+        
+        *. 8/3/22 JS Spread Operator - UDEMY or Cole Steele: https://www.youtube.com/watch?v=pYI-UuZVtHI
+
+        *. ScrollMagic
+
+BREAK
+VS Code -
+        *7/29/22: Need emmet snippets.
+        1. .container>.item.item--$*6
+        2. 
+
+        add to emmet sheet
+        .feature(feature $)*6
+
+        Result:
+
+         * 7/29/22: HTML formatting is really bad.
+
+BREAK
+JS Testing -
+        *7/29/22: Vitetest Not Completed: Left off on Section 6. Also need to add Integrated Tests Info. Maybe add some annotations.
+
+BREAK
+VueGuide:
+        *. Guide needed: Vue part SECTION 1 - 12, 14, PINIA, 16,
+        *. Most used VueUse.
+        *. Vue Forms
+         Vueuse Motion: https://github.com/vueuse/motion, vue parallax scrolling
+        *. VueKinesis, https://openbase.com/js/vue-kinesis/tutorials
+
+BREAK
+NuxtGuide:
+
+        *. Guide needed. Part 1: SECTION 1 - 8.
+        *. Guide Part 2: SECTION 9 - 12.
+
+BREAK
+Docker & K8s:
+        *. Guide needed.
+
+IMPORTANT
+What's Next
+        BREAK
+        
+
+       
+
+        BREAK
+        Future(Unorganized):
+                * Contentful
+        BREAK
+        Node.js -
+                * Guide needed.
+        BREAK 
+        MongoDB/Mongoose
+        * Guide needed.
+
+        7/29/22: Modify The Default Mongodb Root Password
+
+BREAK
+Completed: 
+        *. 7/29/22: Need kits for: Vanilla, Vite/Vue App, Nuxt App. C on 7/29/22.
+        *. CSS UNITS: C on 7/31/22.
+        *. 7/29/22Concepts Guide - How to write a media query? C on 7/31/22.
+        *. 7/29/22: Compiling TS for basic project. C on 7/31/22.
+        *. 7/29/22: Toll Bill. Due on or before 8/9/22. C on 7/31/22.
+        *. 7/30/22 Git Squash Your History. C on 7/31/22.
+        *. 7/30/22Git Rebase vs. Merge. C on 7/31/22.
+        *. 7/30/22. Responsive Design & Media Queries. C on 7/31/22
+        *. 7/30/22. CSS Box. C on 7/31/22.
+        *. 7/31/22: Clean up CSS Selectors page. C on 7/31/22.
+        *. 8/1/22: CSS Text Properties. Completed on 8/1/22.
+        *. 8/1/22: HTML Forms and Inputs. Completed on 8/1/22.
+        *. 8/1/22: Animated CSS Gradients. Completed on 8/1/22.
+        *. 8/1/22: BEM Info. Completed on 8/1/22.
+        *. 8/1/22: HTML Semantics. Completed on 8/1/22.
+        *. 7/29/22: Index Properties. Completed on 8/1/22.
+        *. Completed nullish coalescing(check JS stuff on that then go from there).
+        *. 8/1/22: Grid Guide. Completed on 8/1/22.
+        *. 7/29/22: 7 in 1 folder structure. Completed on 8/1/22.
+        *. Finish last project of SASS udemy. Left off at Chapter 107. Completed on 8/4/22. 
+          * Recommended Figma plugins
+           *. 8/5/22: Organize Final project notes.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+CSS Grid Information
+
+Need better emmet snippets here.
+1. .container>.item.item--$*6 || this creates 
+
+BREAK
+Short hand for grid-column-gap and grid-row-gap is grid-gap.
+For Example: 
+
+                grid-row-gap: 30px;
+                grid-column-gap: 30px;
+                grid-gap: 30px
+
+BREAK
+Grid Template Rows -
+
+                grid-template-rows: 150px 150px; = Two rows that have a height of 150px.
+
+Grid Template Columns -
+
+                grid-template-columns: 150px 150px 150px; = Three columns that have a width of 150px.
+
+BREAK
+Using Repeat: 
+
+                grid-template-rows: repeat(2, 150px); = To have two rows with the height of 150px. 
+
+                grid-template-columns: repeat(2, 150px) 300px; = To have 2 columns with a width of 150 and one column with a width of 300px.
+
+BREAK
+fr: Fractional Unit - Fraction of the available space.
+
+                grid-template-columns: repeat(2, 150px) 1fr
+
+
+BREAK
+Positioning Grid Items -
+
+Moving grid item one into the cell of grid item five: 
+
+                grid-row-start: 2; grid-row-end: 3;
+                Short hand is: grid-row: 2/3;
+
+                grid-column-start: 2; grid-column-end: 3;
+                Short hand is: grid-column: 2/3;
+
+Another short hand: 
+
+                grid-area: 1 / 3 2 / 4; Can appear a bit confusing. 
+
+BREAK
+Spanning Grid Items -
+
+                You can do something like grid-column: 1 / 3;
+                Can also be rewritten as 1 / span 2; Less Effective
+                You can also do 2 / -1(which is the end). More Effective
+
+
+                Z-index: 10; To put an item in front of another item. 
+
+
+BREAK
+Naming Grid Lines -
+
+                grid-template-rows: [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end];
+
+BREAK
+Naming Grid Areas -
+
+                Created in the container: 
+                grid-template-areas:
+                "head head head ." the . acts like an empty cell. 
+                "box  box  box  side"
+                "main main main side"
+                "foot foot foot foot";
+
+                .header {
+                background-color: orangered;
+                grid-area: head;
+                }
+
+BREAK
+Adjusting the cells of the IMPLICIT grid -
+
+                grid-auto-rows: 80px;
+                grid-auto-flow: column; This will have the implicit grid flow as columns rather than the default which are rows. 
+                grid-auto-columns: .5fr; Adjusting the implicit grid for columns. 
+
+
+BREAK
+Aligning Grid Items -
+
+ align-items: center; 
+ 
+                vertically centered inside it's grid area. Default is stretch. stretch/ center / end / start 
+
+justify-items: center;
+
+                horizontally centered inside it's grid area.
+                stretch / center / end / start
+
+align-self: start;
+
+justify-self: start
+
+BREAK
+Aligning Tracks to grid container -
+
+                justify = horizontal
+                align = vertical
+                tracks = content
+
+                justify-content: center; Horizontally align items on tracks center / start / end / space-between / space-around / space-evenly
+
+align-content:center;  Vertically align items on track.
+
+                center / start / end / space-between / space-around / space-evenly
+
+
+BREAK
+Using min-Content,max-content, and the minmax() function -
+
+                min-content: Takes the largest width that is needed to fit the content doing its best not to overflow.  
+                max-content:
+
+                grid-template-rows: repeat(2, minmax(150px, min-content));
+
+                grid-template-rows: repeat(2, minmax(150px, min-content));
+                grid-template-columns: minmax(200px, 1fr) repeat(3, 1fr);
+
+BREAK
+Responsive Layouts with auto-fit and auto-fill -
+
+                grid-template-columns: repeat(auto-fill, 100px);
+                Automatically create columns that are 100px width each. Automatically creates as many tracks with the desired fit within the container.
+
+                grid-template-columns: repeat(auto-fit, 100px);
+                Collapses the columns not needed, leads to a space.
+
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+

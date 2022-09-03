@@ -1,0 +1,31 @@
+CSS UNITS 
+
+Relative Units and Absolute Units 
+
+BREAK
+PX - 
+Avoid for font-sizes, you can use them for small details, borders & shadows.
+
+BREAK
+Percentages -
+Sometimes, its a value from a parent and other times its a value from the element itself. 
+Width: 50% - half the width of the parent element.
+line-height: 50% - half the font-size of the element itself. 
+
+Useful for defining layouts and widths.
+
+BREAK
+em -
+With font-size, 1em equals the font-size of the parent. 2em's is twice the font-size of the parent. 
+With other properties, 1em is equal to the computed font-size of the element itself. Button is a good example to use ems.
+
+BREAK
+rem -
+Root EMS, relative to the root html element's font-size. Often easier to work with. If the root font-size, is 20px, 1 rem is always 20px, 2rem is always 40px, etc..  Most browsers have a default html font-size is 16px.
+
+GO to choice for font-sizes and often padding/margin.
+
+BREAK
+vw & vh -
+1vw is 1% of the width of the viewport. 1vh is 1% of the height of the viewport. For Example: height: 100vh(100%) would make an element take up the full height on the screen. Good to use as containers, then you might use percentages or rem units for the items within the containers. Used for larger layout concerns.
+

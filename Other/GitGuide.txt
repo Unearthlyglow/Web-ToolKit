@@ -1,0 +1,100 @@
+BREAK
+      To Clone a Repo -
+      git clone [url]: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
+    
+BREAK
+      1. Create Repo on Github and follow instructions in the "or create a new repository on the command line
+" section.
+
+BREAK
+      2. Be sure to ignore files with the .gitignore file and add the following:
+
+            node_modules
+            dist (some people want to keep the dist folder and some people don't)
+            .parcel-cache
+
+BREAK
+      3. With the CLI you can create a new branch with: 
+
+            git branch New-Branch      
+
+
+BREAK
+      4. You can check the status of the current branch you're on with: 
+
+            git status
+
+BREAK
+      5. You can move to another branch with: 
+
+            git checkout Branch-Name
+
+BREAK
+      6. To have files tracked:
+
+            git add -A 
+
+BREAK
+      7. You can send commits with: 
+
+            git commit -m ‘Mrs. Doubtfire Deserved a Sequel’
+
+BREAK
+      8. You can merge branches with: 
+
+      git merge [name of branch]
+
+      Additional: When performed the branch you are currently on will accept the changes from another branch. 
+
+
+BREAK
+      9. You can go back to the previous commit snapshot with: 
+
+            git reset --hard Head 
+
+BREAK
+      10. You can update your local branch from your remote branch on Github with:
+      
+            git pull
+
+BREAK
+      11. You can push your local branch to your remote repo with the following:
+
+             git push -f: Force a push that would otherwise be blocked, usually because it will delete or overwrite existing commits (Use with caution!)
+
+            git push -u origin [branch]: Useful when pushing a new branch, this creates an upstream tracking branch with a lasting relationship to your local branch
+
+            git push --all: Push all branches
+
+            git push --tags: Publish tags that aren't yet in the remote repository
+
+
+GIT SQUASHING AND REBASING: 
+
+NEW SECTION
+IMPORTANT
+WARNING: Never rebase commits that have been shared with others. If you have already pushed commits up to Github DO NOT rebase them unless you are positive no one on the team is using those commits OR you feel comfortable breaking this golden rule! Rebasing changes hashes, it can be a pain to reconcile the alternate histories, Nothing will match up!
+
+Git Squash -
+Combining commits into a single commit.
+Squashing can help keep your Git history tidier and easier to read. Squashing retains all the changes you made but condenses them down into a single commit. Often you may not want all of those messy feature branch commits to muddy the mainline history. This is just a personal/org choice. You never NEED to squash commits. 
+
+Interactive Rebase -
+Running git rebase with the -i option will enter the interactive mode, which allows us to squash commits, reword commit messages, add files, drop commits, and more. Note that we need to specify how far back we want to rewrite commits. You can also provide a commit has 
+
+        git rebase -i HEAD~(commitHash)
+
+In your text editor, we'll see a list of commits alongside a list of commands that we can choose from. Here are a couple of the more commonly used commands:
+
+        1. pick - use the commit.
+        2. reword - use the commit, but edit the commit message.
+        3. edit - use commit, but stop for amending.
+        4. squash - meld into previous commit. 
+        5. drop - remove commit.
+    
+Squashing - 
+Top squash commits, replace "pick" with squash for each commit that you want to squash. Then, save the file and close it. Git will perform the rebase, squashing the commits, and then will prompt you to edit the newly rewritten commit message. 
+
+
+Alternative: 
+        git merge --squash about-me(name of branch)

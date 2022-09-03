@@ -1,0 +1,100 @@
+HTML Forms and Inputs - 
+
+BREAK
+The Form Element:
+Look up MDN for the many types of inputs.
+Example: email,file, date, color, etc...
+
+          *. <input type="text" placeholder="User Name" value="Some text already populated."/>
+          *.
+
+BREAK
+Labels:
+        
+        Important for accessibility/screen readers.
+          *.<label for="paper">Confirm Your favorite pizza </label>
+            <input type="checkbox" name ="paper pizza" id="paper"> Need to make sure I have a good working example here.
+          *.
+          *.
+          *.
+
+BREAK
+Submitting a form is essentially a HTTP request. Submits a group of information. Good practice to have labels above the inputs. 
+
+          <h2>Form Element </h2>
+          <form action="http://www.google.com">
+          <input type="text" placeholder="Username" name="username"> 
+          <input type="password" placeholder="password" name="password"> 
+          <button>Submit</button>
+          </form>
+
+        Another way to submit with a button:
+      <input type="submit" value="go" />  
+
+BREAK
+Select Menus:
+
+        <label for="sort">Sort By:</label>
+        <select name="Put in the matching query" id="">
+          <option value="top">Top</option>
+          <option value="new">New</option>
+          <option value="relevance">Another Option</option>
+        </select>
+         
+
+BREAK
+Radio Buttons:
+
+The name attribute will make it so only one choice can be made. 
+
+            <h2>Radio Buttons</h2>
+          <input type="radio" id="red" name="color" value="red">
+          <label for="red">Red</label>
+          <input type="radio" id="orange" name="color" value="orange">
+          <label for="orange">orange</label>
+
+
+
+BREAK
+Checkboxes
+Examples:
+        <input type="checkbox" id="likesMusic">
+        <label for="likesMusic"> I like music </label>
+          <fieldset>
+          <legend>Choose your monster's features:</legend>
+
+          <div>
+            <input type="checkbox" id="scales" name="scales"
+                  checked>
+            <label for="scales">Scales</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="horns" name="horns">
+            <label for="horns">Horns</label>
+          </div>
+          </fieldset>
+
+
+BREAK
+Text Area:
+
+    <h2>Text Area</h2>
+    <textarea name="" id="" cols="30" rows="10">Some Dummy Text</textarea>
+
+BREAK
+HTML Validations
+
+    Form validation in vanilla JS...
+
+    <form action="#" method="">
+      <input type="text" placeholder="username" required>
+      <button>Submit</button>
+    </form>
+
+
+    
+BREAK
+Min length and Max length :
+    
+          <input type="text" placeholder="username" required maxlength="10" minlength="2">

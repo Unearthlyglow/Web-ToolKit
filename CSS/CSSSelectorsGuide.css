@@ -1,0 +1,113 @@
+NEW SECTION
+CSS Selectors - 
+
+BREAK
+
+        * {
+          Universal Selector: all of the elements, very inefficient.
+        }
+
+
+BREAK
+        element selector: This will apply to all of the IMAGES.
+
+        img {
+          
+        }
+BREAK
+Class Selector -
+
+        .class1 {
+
+        }
+
+BREAK
+ID Selector -
+Used for selecting a unique element:
+
+        #logo {
+          width: 300px;
+        }
+        
+
+BREAK
+Styling one rule-set with two selectors -
+Example: All h1 and h2 elements will have a text color of pink.
+
+        h1, h2 {
+          color: pink;
+        };
+
+BREAK
+Descendent Selector(combinator) -
+Example: "Select all <a>'s that are nested inside an <li> which is listed under a <ul> which is listed under a <nav> which is listed under <header>"
+
+        header li {
+          display: inline;
+        };
+
+BREAK
+Adjacent Selector(combinator)"Not used often" -
+Select only the paragraphs that are immediately preceded by an <h1>. Select an element right after another paragraph. 
+
+        h1 + p {
+          color: red
+        }
+
+BREAK
+Direct Child -
+Select only the <li>'s that are direct children of a <div> element. Probably wanna make sure there is a class for each div then use the direct child of that. 
+
+      .divClass1 > li {
+        color: white;
+      }
+
+
+BREAK
+Attribute Selector - 
+Select all input elements where the type attribute is set to "text": 
+
+      input [type="text"] {
+        width: 300px; 
+        color: yellow;
+      }
+
+BREAK BREAK BREAK
+Psuedo Classes -
+keywords added to a selector that specifies a special state of a selected element(s).
+
+        1. :active
+
+        2. :checked
+
+        3. :first
+
+        4. :first-child
+
+        5. :hover
+
+        6. :not(), not efficient. Will match anything except what is passed into the (). Example: :not(p) - Everything will be styled a certain way except for all of the p tags. 
+        7. :nth-child(2n)
+        8. :nth-of-type(), 4th-of-type()
+
+BREAK BREAK BREAK
+Pseudo Elements -
+Keyword added to a selector that lets you style a particular part of selected element(s).
+
+        1. ::after
+        
+        Example: 
+        Adding an arrow after all links
+        a:: after {
+          content: "->";
+        }
+
+        2. ::before - great for adding effects. 
+
+        3. ::first-letter
+
+        4. ::first-line 
+
+        5. ::selection - custom highlight stlye within an elemennt. Example: p::selection {
+          background-color: yellow;
+        } All text within paragraphs when selected over with a cursor will have a background color of yellow. 

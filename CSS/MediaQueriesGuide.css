@@ -1,0 +1,35 @@
+Centering Items justify, make specific info about centering in Grid. 
+
+@media(max-width: 400px) {
+
+}
+
+@media print{
+  Determines what a page looks like when being printed. Interesting.
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    color: green
+  }
+}
+When the screen's max width is 500px or BELOW, the H1's text color will be changed to green.
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+  h1 {
+    color: orangered;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 50em) {
+  ...
+}
+
+===
+Media Queries level 4
+@media screen and (30em <= width <= 50em) {
+  ....
+}
+
+Don't worry about all the many common breakpoints, just use relative units for CSS chunks and then make a breakpoint media query based on taste.

@@ -1,0 +1,72 @@
+NEW SECTION
+CSS Text Properties
+
+BREAK
+font-size: Change the font-size.
+        
+BREAK
+font-family:
+Google Fonts get cached in your browser so if a user has visited a site already that has the same font that's on your website, depending on how long it has been between their visit to the other site and you're site, the user's browser will already have the font downloaded and cached on their browser. 
+
+Specifying WHICH characters I need from Google Fonts. In a case in which I only need a certain font for a word or a couple of letters, I can specify which characters should be downloaded from Google Fonts with the text="X"
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap&text=HELLO" rel="stylesheet">
+
+BREAK
+font-weight:
+
+          *. font-weight: 400
+          
+BREAK
+font-style:
+
+          *. font-style: normal
+          *. font-style: italic
+          *. font-style: oblique
+          *. font-style oblique 40deg
+
+BREAK
+text-transform:
+
+          *. text-transform: capitalize/uppercase/lowercase/none/full-width/full-size-kana
+         
+
+BREAK
+text-decoration:
+Adds decorative lines on text.
+          *. text-decoration: underline/underline dotted/underline dotted red/green navy underline/underline overline blue/line-through red solid/
+
+BREAK
+text-shadow:
+Quite the rough effect on text
+          *. text-shadow: 1px 1px 2px yellow
+          *.(offset-x) | (offset-y) | (blur-radius) | (color)
+
+BREAK
+text-align:
+Keep in mind the width available to an element. Inline elements by default will have the width of their content.
+          *. left/right/center 
+
+BREAK
+line-height:
+Determines the height between lines(such as sentences) vertically.
+          *. line-height: 10px
+
+BREAK
+letter-spacing:
+The spacing horizontally between the letters of words.
+          *. letter-spacing: 20px;
+
+BREAK
+word-spacing:
+The spacing horizontally between words.
+          *. word-spacing: 30px;
+
+BREAK
+text-overflow:
+The text-overflow CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('…'), or display a custom string.
+
+
+          *. text-overflow: ellipsis/clip/"-"/" "
+   
+      

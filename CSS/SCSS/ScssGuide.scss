@@ -1,0 +1,91 @@
+Installation - 
+Already installed, chump. See next chunk of info.
+
+
+BREAK 
+Compiling SCSS file into CSS file for Vanilla Projects -
+
+        (In the Terminal)
+    sass main.scss:main.css --watch
+
+BREAK
+Variables -
+
+      $primary-color: rgb(245 231 32);
+
+BREAK
+Partials - You can create partial Sass files that contain little snippets of CSS that you can include in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like _partial.scss. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the @use rule.
+
+      @use 'nameofPartial'; place this at the top of the file. 
+
+
+BREAK
+Modules - Used to import other scss files.
+
+      @use 'base'; place this at the top of the file.
+
+      .backgroundHeader {
+        background-color: base.$primary-color;
+        color: white;
+      }
+
+BREAK
+Mixins - Defines multiple properties in one variable and just as importantly it allows for parameters to be passed through
+        
+    @mixin theme($theme: rgb(119 198 200)) {
+          background: $theme;
+          color: blue;
+        }
+
+        body {
+          @include theme();
+        }
+
+BREAK
+Extend and Inheritance -
+
+Examples of Inheritance:
+This CSS will print because %message-shared is extended. 
+
+    %message-shared {
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #333;
+      }
+
+This CSS won't print because %equal-heights is never extended.
+
+        %another-thing {
+          font-size: 30px;
+        }
+
+This CSS won't print because %equal-heights is never extended.
+
+        %equal-heights {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+Examples of Extend:
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  @extend %another-thing;
+  border-color: green;
+  
+}
+
+BREAK 
+Nesting 
+
+.Card {
+  box-shadow: 0 4px 8px 0 red;
+
+  &__header {
+    display: flex;
+  }
+}
+Sass Functions do exists, don't have any I want yet:

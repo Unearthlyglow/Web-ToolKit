@@ -1,0 +1,119 @@
+IMPORTANT: 
+Notes from Final CSS/SASS Udemy Project by Jonas
+
+        *. Having a sticky footer even when there is no content on the page(vs a populated blog post, home page, etc...)
+
+        *. Make sure I truly understand extend in scss.
+
+        *. When Prototyping: Don't worry about all those 7in1 folder stuff, just start with scss files that mimic the layout(you can move them to a folder later)
+
+        Example:
+        _base.scss
+        _header.scss
+        _features.scss
+        _reviews.scss
+        _footer.scss
+
+        * Global Reset:
+        This is smart because it makes working with rems and pixels easier.
+
+        html {
+          font-size: 62.5% 10px/16px = 62.5% = 1rem = 10px
+        }
+
+        *. Grid systems of 8, 12, or 16 predefined columns are quite common.
+
+
+        *. Go from the beginning to the end: 1 / -1;
+        THE -1 is the key. KEEP IN MIND -1 will only works with an EXPLICIT grid, not an implicit one;
+
+
+        *. Columns are more important, be sure to define them well. We want content to define rows.
+
+        *. Look into using SVGs in html, css, etc..
+        <svg class="feature_icon">
+        <use xline:href="img/sprite.svg#icon-global></use?
+        </svg>
+
+        header 1s: Font Family, 
+        header 2s: Font Family, 
+        header 3s: Font Family, 
+        header 4s: Font Family, 
+        Ps: Font Family, 
+
+
+        *. Can also store font families in variables SCSS?
+
+        *. In some cases you may need to do a small adjustment for an svg image etc.. you can use:
+        transform: translateY(-1)
+
+        Chapter 109
+        Making it so the features section auto-sizes appropriately for responsiveness:
+
+        grid-template-columns: repeat(auto-fit, minmax(25em, 1fr)); Make sure I have auto-fit defined in one of my guides.
+
+
+        Chapter 110
+        Helper classes - Useful for reusable components.
+        .mb-sm { margin-bottom: 2rem; }
+
+
+        IMPORTANT
+        BREAK Chapter 111
+        Display the width of images in percentages to make them flexible. Images have intrinsic aspect ratio and tries to keep it's aspect ratio when being placed on a grid. Want to have a picture overlap into another grid(etc) make the width 115%(or however high, not too high) and have a z-index of 20.
+
+        Chapter 113
+        Display flex to get the some grid items closer together...try it out. In the video...it looks like it collapsed some padding..Once im done with the flexbox module, should make more sense.
+        Essentially what does flexbox do to items by default? 
+
+        BREAK Chapter 114
+        IMPORTANT for making a gallery. REALLY GOOD.
+        having an image fitting a container:  object-fit: cover;
+        You have to manually put the width and height or object fit will not work. Set display to block to avoid some additional white space. 
+
+        Chapter 119
+        Use filter: brightness(70%) to lower the brightness, anything above 100% will raise the brightness.
+
+        use ::before and ::after you have to list content: ""; need to to look this up. 
+
+        background-color: currentColor;
+
+        The ultimate personal freedom part is a good code example for stretching and responsiveness, be sure to analyze. 
+
+        Chapter 120
+        IMPORTANT
+        Good to list images as display: BLOCK.
+
+        IMPORTANT
+        BREAK Chapter 121
+        Figure out the break-points of the media query by slowly de-sizing the window and see where the layout breaks. 
+
+        Use ems with Breakpoints.
+        1200px was found because on the project we down-sized the browser until the layout broke. 
+
+        1200 / 16(default font size of a browser)
+
+        $bp-largest: 75em = 1200px
+        1000px large
+        800px medium
+        600px small
+        html {
+          font-size: 62.5% = 10px
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+          font-size: 50% = 8px
+        }
+
+        BREAK Chapter 122
+        IMPORTANT:
+        Make sure to add the media query BEFORE the layout does not look to your liking. If it doesn't look good at 719px, the breakpoint can be around 800px(the last point the layout looks acceptable, Jonas went up by 100px). 
+
+        BREAK Chapter 123 4:30
+        The calc function.
+        calc(100vh - 6rem) makes it so the next section occurs right after the header. 
+
+
+
+
+

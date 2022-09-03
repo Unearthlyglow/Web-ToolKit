@@ -1,0 +1,10 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "outline.problems.enabled": true,
+  "C_Cpp.errorSquiggles": "Enabled",
+  "eslint.enable": true,
+  "eslint.format.enable": false,
+  "eslint.quiet": false,
+  "typescript.validate.enable": false
+}
